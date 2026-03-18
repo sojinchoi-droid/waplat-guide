@@ -52,19 +52,17 @@
   }
   .header {
     background: linear-gradient(135deg, #1565C0, #0D47A1);
-    color: white; padding: 24px 20px 18px; text-align: center;
+    color: white; padding: 14px 20px 12px; text-align: left;
     position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
   .header-inner {
-    display: flex; align-items: center; justify-content: center; gap: 14px;
-    max-width: 640px; margin: 0 auto; position: relative;
+    display: flex; align-items: center; gap: 12px;
+    max-width: 640px; margin: 0 auto;
   }
   .header-logo {
-    position: absolute; left: 0; top: 50%; transform: translateY(-50%);
-    height: 28px; width: auto;
+    height: 24px; width: auto; flex-shrink: 0;
   }
-  .header h1 { font-size: 1.3rem; font-weight: 700; }
-  .header .subtitle { font-size: 0.8rem; opacity: 0.85; margin-top: 4px; }
+  .header h1 { font-size: 1.05rem; font-weight: 700; white-space: nowrap; }
   .version-badge-bar {
     background: #F3E5F5; text-align: center; padding: 10px 16px;
     border-bottom: 2px solid #CE93D8;
@@ -120,15 +118,13 @@
   .step-content { flex: 1; font-size: 1rem; }
   .step-content strong { color: var(--primary-dark); }
   .yt-link {
-    display: flex; align-items: center; gap: 10px; padding: 14px 18px;
-    background: #FFEBEE; border-radius: 12px; margin: 14px 0;
-    text-decoration: none; color: #D32F2F; font-weight: 700; font-size: 0.95rem;
+    display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px;
+    background: #FFEBEE; border-radius: 20px; margin: 8px 0 14px;
+    text-decoration: none; color: #D32F2F; font-weight: 700; font-size: 0.82rem;
     border: 1.5px solid #EF9A9A; transition: all 0.2s;
   }
   .yt-link:active { background: #FFCDD2; }
-  .yt-icon { font-size: 1.5rem; flex-shrink: 0; }
-  .yt-text { flex: 1; }
-  .yt-text small { display: block; font-weight: 400; font-size: 0.8rem; color: #616161; }
+  .yt-icon { font-size: 1.1rem; flex-shrink: 0; }
   .alert {
     border-radius: 12px; padding: 16px 18px; margin: 14px 0; font-size: 0.95rem;
     display: flex; gap: 10px; align-items: flex-start;
@@ -201,10 +197,7 @@
 <header class="header" id="top">
   <div class="header-inner">
     <img src="assets/logo-white.png" alt="waplat" class="header-logo">
-    <div>
-      <h1>생활지원사를 위한 와플랫 공공 가이드</h1>
-      <div class="subtitle">어르신 방문 안내용</div>
-    </div>
+    <h1>생활지원사를 위한 와플랫 가이드</h1>
   </div>
 </header>
 
@@ -261,7 +254,7 @@
       <span class="toggle-icon">▼</span>
     </div>
     <div class="section-body">
-      <a class="yt-link" href="https://youtu.be/IkTHQhKnxqk" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">앱 설치 영상 보기<small>유튜브에서 보기</small></span></a>
+      <a class="yt-link" href="https://youtu.be/IkTHQhKnxqk" target="_blank">▶️ 영상 보기</a>
       <div class="alert alert-danger"><span class="alert-icon">🚨</span><span>앱은 <strong>2개(와플랫 공공 + 와플랫 맞고)</strong>를 모두 설치합니다.</span></div>
       <h4 style="margin-bottom:12px; color:var(--primary-dark);">와플랫 공공 설치</h4>
       <div class="step"><span class="step-num">1</span><span class="step-content"><strong>구글 플레이스토어</strong>를 엽니다.</span></div>
@@ -283,7 +276,7 @@
       <span class="toggle-icon">▼</span>
     </div>
     <div class="section-body">
-      <a class="yt-link" href="https://youtu.be/4LRmmDhtf8s" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">회원가입 영상 보기<small>유튜브에서 보기</small></span></a>
+      <a class="yt-link" href="https://youtu.be/4LRmmDhtf8s" target="_blank">▶️ 영상 보기</a>
       <div class="step"><span class="step-num">1</span><span class="step-content"><strong>[와플랫 공공]</strong> 앱을 엽니다.</span></div>
       <div class="step"><span class="step-num">2</span><span class="step-content">서비스 안내 화면에서 <strong>[다음]</strong>을 선택합니다. (5회)</span></div>
       <div class="step"><span class="step-num">3</span><span class="step-content"><strong>[와플랫 시작하기]</strong> 버튼을 선택합니다.</span></div>
@@ -309,8 +302,8 @@
 
       <div class="subsection">
         <div class="subsection-title">📞 AI 생활지원사 대화</div>
-        <a class="yt-link" href="https://youtu.be/0B9bLtWYscM" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">AI 생활지원사 대화 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">AI가 전화를 걸어 어르신과 대화하며 건강 상태를 확인합니다.</p>
+        <p style="margin-bottom:8px;">AI가 전화를 걸어 어르신과 대화하며 건강 상태를 확인합니다.</p>
+        <a class="yt-link" href="https://youtu.be/0B9bLtWYscM" target="_blank">▶️ 영상 보기</a>
         <h4 style="margin-bottom:10px; color:var(--text-light);">처음 사용 시 준비 (반드시 진행)</h4>
         <div class="step"><span class="step-num">1</span><span class="step-content">홈 화면에서 <strong>[AI 생활지원사]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content"><strong>[준비하기]</strong> → <strong>[전체 동의하기]</strong>를 체크합니다.</span></div>
@@ -334,8 +327,8 @@
 
       <div class="subsection">
         <div class="subsection-title">💛 안부체크 (자동 안부 확인)</div>
-        <a class="yt-link" href="https://youtu.be/c2Y0JnayaXI" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">안부체크 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">매일 정해진 시간에 안부 알림이 울립니다. 48시간 미확인 시 담당자에게 자동 알림이 전송됩니다.</p>
+        <p style="margin-bottom:8px;">매일 정해진 시간에 안부 알림이 울립니다. 48시간 미확인 시 담당자에게 자동 알림이 전송됩니다.</p>
+        <a class="yt-link" href="https://youtu.be/c2Y0JnayaXI" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">매일 <strong>오전 9시</strong> 또는 <strong>오후 12시</strong>에 알림이 울립니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content">알림이 오면 <strong>[안부 확인하기]</strong> 버튼을 선택합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content">버튼만 선택하면 안부 확인이 완료됩니다.</span></div>
@@ -354,8 +347,8 @@
 
       <div class="subsection">
         <div class="subsection-title">🩺 건강상담</div>
-        <a class="yt-link" href="https://youtu.be/WwUHopx_w1g" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">건강상담 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">전화 한 통으로 17개 분야 전문의·간호사 상담이 가능합니다.</p>
+        <p style="margin-bottom:8px;">전화 한 통으로 17개 분야 전문의·간호사 상담이 가능합니다.</p>
+        <a class="yt-link" href="https://youtu.be/WwUHopx_w1g" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">서비스 메뉴에서 <strong>[건강상담]</strong>을 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content"><strong>[건강상담 전화하기]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content"><strong>[통화]</strong> 버튼을 선택하여 상담사와 전화를 연결합니다.</span></div>
@@ -365,8 +358,8 @@
 
       <div class="subsection">
         <div class="subsection-title">🏘️ 생활상담</div>
-        <a class="yt-link" href="https://youtu.be/sFABIVknfWs" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">생활상담 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">지역 120 콜센터를 통해 일상생활, 교통, 복지, 민원 등의 상담을 받을 수 있습니다.</p>
+        <p style="margin-bottom:8px;">지역 120 콜센터를 통해 일상생활, 교통, 복지, 민원 등의 상담을 받을 수 있습니다.</p>
+        <a class="yt-link" href="https://youtu.be/sFABIVknfWs" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">서비스 메뉴에서 <strong>[생활상담]</strong>을 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content"><strong>[생활상담 전화하기]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content">상담사와 전화 통화로 생활에 대한 상담을 진행합니다.</span></div>
@@ -375,8 +368,8 @@
 
       <div class="subsection">
         <div class="subsection-title">💊 복약알림</div>
-        <a class="yt-link" href="https://youtu.be/Pi5PSMEaKSE" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">복약알림 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">약 먹을 시간을 등록하면 알림으로 안내합니다.</p>
+        <p style="margin-bottom:8px;">약 먹을 시간을 등록하면 알림으로 안내합니다.</p>
+        <a class="yt-link" href="https://youtu.be/Pi5PSMEaKSE" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">서비스 메뉴에서 <strong>[복약알림]</strong>을 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content"><strong>[복약 등록하기]</strong>를 선택하고 약 이름과 시간을 입력합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content">등록한 시간에 알림이 울리면 <strong>[약 먹었어요]</strong>를 선택합니다.</span></div>
@@ -385,8 +378,8 @@
 
       <div class="subsection">
         <div class="subsection-title">❤️ 스트레스체크 / 심혈관체크</div>
-        <a class="yt-link" href="https://youtu.be/oyQlX-vx-6s" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">스트레스·심혈관 체크 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">카메라에 손가락을 대고 건강 상태를 측정합니다.</p>
+        <p style="margin-bottom:8px;">카메라에 손가락을 대고 건강 상태를 측정합니다.</p>
+        <a class="yt-link" href="https://youtu.be/oyQlX-vx-6s" target="_blank">▶️ 영상 보기</a>
         <h4 style="margin-bottom:10px; color:var(--text-light);">스트레스체크</h4>
         <div class="step"><span class="step-num">1</span><span class="step-content"><strong>[스트레스체크]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content">최초 사용 시 카메라 권한 <strong>[허용]</strong>을 선택합니다.</span></div>
@@ -402,8 +395,8 @@
 
       <div class="subsection">
         <div class="subsection-title">🎴 맞고</div>
-        <a class="yt-link" href="https://youtu.be/uHSLMjimRoA" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">맞고 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">두뇌 운동과 치매 예방을 위한 맞고 게임입니다.</p>
+        <p style="margin-bottom:8px;">두뇌 운동과 치매 예방을 위한 맞고 게임입니다.</p>
+        <a class="yt-link" href="https://youtu.be/uHSLMjimRoA" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">서비스 메뉴에서 <strong>[맞고]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content">맞고 앱이 실행되면 <strong>[와플랫 앱으로 시작하기]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content">최초 이용 시 <strong>[와플랫 회원]</strong>으로 로그인합니다.</span></div>
@@ -413,8 +406,8 @@
 
       <div class="subsection">
         <div class="subsection-title">🧠 기억콕콕</div>
-        <a class="yt-link" href="https://youtu.be/nyzbF-7eYQM" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">기억콕콕 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">인지 기능 훈련을 위한 두뇌 운동 서비스입니다.</p>
+        <p style="margin-bottom:8px;">인지 기능 훈련을 위한 두뇌 운동 서비스입니다.</p>
+        <a class="yt-link" href="https://youtu.be/nyzbF-7eYQM" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">서비스 메뉴에서 <strong>[기억콕콕]</strong>을 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content">안내에 따라 <strong>두뇌 운동 프로그램</strong>을 진행합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content">완료 후 결과를 확인합니다.</span></div>
@@ -422,8 +415,8 @@
 
       <div class="subsection">
         <div class="subsection-title">🚨 긴급전화</div>
-        <a class="yt-link" href="https://youtu.be/9vkVyq2ge1o" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">긴급전화 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">위급 상황 시 빠르게 긴급 전화를 연결할 수 있습니다.</p>
+        <p style="margin-bottom:8px;">위급 상황 시 빠르게 긴급 전화를 연결할 수 있습니다.</p>
+        <a class="yt-link" href="https://youtu.be/9vkVyq2ge1o" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">서비스 메뉴에서 <strong>[긴급전화]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content">원하는 <strong>긴급 연락처</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content"><strong>[통화]</strong> 버튼을 선택하여 연결합니다.</span></div>
@@ -432,8 +425,8 @@
 
       <div class="subsection">
         <div class="subsection-title">📢 안내데스크</div>
-        <a class="yt-link" href="https://youtu.be/qqUXE2AYlAI" target="_blank"><span class="yt-icon">▶️</span><span class="yt-text">안내데스크 영상 보기<small>유튜브에서 보기</small></span></a>
-        <p style="margin-bottom:12px;">카카오톡 채널 추가로 공지사항, 서비스 업데이트, 이벤트 안내를 받을 수 있습니다.</p>
+        <p style="margin-bottom:8px;">카카오톡 채널 추가로 공지사항, 서비스 업데이트, 이벤트 안내를 받을 수 있습니다.</p>
+        <a class="yt-link" href="https://youtu.be/qqUXE2AYlAI" target="_blank">▶️ 영상 보기</a>
         <div class="step"><span class="step-num">1</span><span class="step-content">하단 <strong>[안내데스크]</strong> → <strong>[카톡 친구 추가]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">2</span><span class="step-content"><strong>[채널 추가하고 혜택 알림 받기]</strong>를 선택합니다.</span></div>
         <div class="step"><span class="step-num">3</span><span class="step-content"><strong>[채널 추가]</strong> 버튼을 선택합니다.</span></div>
