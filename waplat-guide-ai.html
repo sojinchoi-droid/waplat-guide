@@ -46,6 +46,8 @@
     font-family: 'NHNSans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
     font-weight: 300;
     background: var(--bg); color: var(--text); line-height: 1.7; padding-bottom: 80px;
+    word-break: keep-all; overflow-wrap: break-word;
+    letter-spacing: -0.02em;
   }
   h1, h2, h3, h4, strong, .section-title, .subsection-title, .trouble-label, .quick-nav a {
     font-weight: 700;
@@ -62,7 +64,7 @@
   .header-logo {
     height: 24px; width: auto; flex-shrink: 0;
   }
-  .header h1 { font-size: 1.05rem; font-weight: 700; white-space: nowrap; }
+  .header h1 { font-size: 1.05rem; font-weight: 700; white-space: nowrap; letter-spacing: -0.03em; }
   .version-badge-bar {
     background: #F3E5F5; text-align: center; padding: 10px 16px;
     border-bottom: 2px solid #CE93D8;
@@ -115,7 +117,7 @@
     min-width: 36px; height: 36px; background: var(--primary); color: white;
     border-radius: 50%; font-weight: 700; font-size: 0.95rem; flex-shrink: 0;
   }
-  .step-content { flex: 1; font-size: 1rem; }
+  .step-content { flex: 1; font-size: 1rem; word-break: keep-all; }
   .step-content strong { color: var(--primary-dark); }
   .yt-link {
     display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px;
